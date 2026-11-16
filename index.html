@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loop & Charm | Handcrafted Keychain Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <span class="brand-badge">🗝️</span>
+        <span class="brand-name">Loop &amp; Charm</span>
+      </a>
+      <div class="nav-right">
+        <button id="cart-btn" class="cart-button" aria-label="View Cart">
+          <span>Cart</span>
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero-tag">Handcrafted &amp; Custom Keychains</div>
+      <h1>Carry a little joy with every set of keys.</h1>
+      <p class="hero-sub">From custom engraved brass to hand-stitched leather and vibrant acrylic charms — designed to last a lifetime.</p>
+      <div class="filter-bar">
+        <button class="filter-pill active" data-category="all">All Items</button>
+        <button class="filter-pill" data-category="leather">Leather</button>
+        <button class="filter-pill" data-category="metal">Brass &amp; Metal</button>
+        <button class="filter-pill" data-category="acrylic">Art &amp; Acrylic</button>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div id="products-grid" class="products-grid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Modal / Drawer -->
+  <div id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <h2>Your Bag</h2>
+        <button id="close-cart-btn" class="close-btn" aria-label="Close cart">&times;</button>
+      </div>
+      <div id="cart-items" class="cart-items-list">
+        <p class="empty-cart-msg">Your bag is currently empty.</p>
+      </div>
+      <div class="drawer-footer">
+        <div class="total-row">
+          <span>Subtotal:</span>
+          <span id="cart-total" class="total-price">$0.00</span>
+        </div>
+        <button id="checkout-btn" class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Loop &amp; Charm Studio. Small batch, thoughtfully made.</p>
+  </footer>
+</body>
+</html>
